@@ -27,7 +27,7 @@ splits = {word: [c for c in word] for word in word_freq.keys()}
 
 def compute_pair_freqs(splits):
     pair_freqs = defaultdict(int)
-    for word, freq in word_freqs.items():
+    for word, freq in word_freq.items():
         split = splits[word]
         if len(split) == 1:
             continue
